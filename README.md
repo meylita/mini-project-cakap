@@ -2,7 +2,6 @@
 1. 'npm install' for install library
 2. 'ng serve' for running project. Navigate to `http://localhost:4200/`
 
-
 # Description of the project
 1. Data API from https://api.github.com/users, 
 2. database field login, for input username in http://localhost:4200/signin
