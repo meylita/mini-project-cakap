@@ -1,0 +1,45 @@
+.card-repo {
+    top: 150px;
+    left: 20%;
+    max-width: 650px;
+}
+.img-profile {
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    margin-left: 20px;
+    margin-bottom: 5px;
+}
+.button-submit {
+    background-color: #e4e0e0;
+    padding: 2px;
+    font-size: 12px;
+    line-height: 20px;
+    margin-left: 5px;
+    margin-bottom: 5px;
+    width: 30%;
+}
+.display {
+    display: flex;
+}
+.title {
+    text-align: center;
+}
+.flex-between {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 5px;
+    border: 1px solid black;
+}
+.left {
+    margin: 5px;
+    font-size: 15px;
+}
+.right {
+    margin: 5px;
+    padding: 5px;
+}
+.project-name {
+    margin: 5px;
+}

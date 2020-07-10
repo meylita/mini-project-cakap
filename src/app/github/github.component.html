@@ -1,0 +1,9 @@
+<mat-card class="card-center">
+  <div class="label-username">
+    <mat-label>Input your github username</mat-label>
+  </div>
+  <div class="input-username">
+    <input class="width-input" matInput placeholder="Github Username" #Person />
+    <button class="button-submit" mat-button (click)="searchUser(Person.value)">Submit</button>
+  </div>
+</mat-card>

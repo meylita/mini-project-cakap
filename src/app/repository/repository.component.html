@@ -1,0 +1,56 @@
+<mat-card class="card-repo" *ngIf="data">
+    <button class="button-submit" (click)="back()" mat-button >Back</button>
+    <h3 class="title">My Repositories</h3>
+    <div class="flex-between">
+                <div class="left">
+                    <div class="display">
+                    <img class="img-profile" src="{{data.owner.avatar_url}}">
+                    <span class="project-name">{{data.owner.login}} / {{data.name}}</span>
+                        
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="display">
+                    <div style="margin-right: 5px;">
+                    <mat-icon matTooltip="Star Count"
+                    matTooltipPosition="above" aria-hidden="false">star_outline</mat-icon>
+                    {{data.stargazers_count}}
+                    </div>
+                    <div style="margin-right: 5px">
+                    <mat-icon matTooltip="Wath Count"
+                    matTooltipPosition="above" aria-hidden="false">remove_red_eye</mat-icon>
+                    {{data.watchers_count}}
+                    </div>
+                    <div style="margin-right: 5px">
+                    <mat-icon matTooltip="Fork Count"
+                    matTooltipPosition="above" aria-hidden="false">call_split</mat-icon>
+                    {{data.forks_count}}
+                    </div>
+                    </div>
+                </div>
+    </div>
+
+    <div class="flex-between">
+       <div class="left">
+        <ul>
+            <li>Languange: {{data.language}}</li>
+
+            <li >Size: {{data.size}}</li>
+
+            <li >Forking Url: {{data.forks_url}}</li>
+    
+            <ng-container *ngIf="data.description !==null; else empty">
+            <li >Description: {{data.description}}</li>
+            </ng-container>
+            <ng-template #empty>
+            <li>“Description is not available for this project</li>
+            </ng-template>
+                        
+        </ul>
+       </div>
+       <div class="right"></div>
+    </div>
+   
+
+  </mat-card>
+  
