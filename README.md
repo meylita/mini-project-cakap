@@ -18,7 +18,7 @@ repository button got redirection into My Repositories Page
 - Project language
 - Project size
 - Forking URL
-- Description (if description is NULL, please put “Description is not
+- Description (if description is NULL, “Description is not
 available for this project” message)
 
 # How to build
