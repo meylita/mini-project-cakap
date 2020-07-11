@@ -4,7 +4,7 @@
 
 # Description of the project
 1. Data API from https://api.github.com/users, 
-2. database field login, for input username in http://localhost:4200/signin
+2. database field login, example: mojombo for input username in http://localhost:4200/signin
 3. In page first input username, then click submit then direct to Profile Page
 4. In profile page, can see data the information about that users, also can see
 button repository and back. If click Back then redirect into first page, If click
